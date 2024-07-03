@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Réinitialise les marges et les padding par défaut */
+}
+
+header {
+    display: flex;
+    background-color: #142d4f;
+    padding: 10px;
+    color: #fff;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    /* Style pour l'en-tête */
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet d'avoir un conteneur flexible avec retour à la ligne pour les éléments enfants */
+}
+
+.first-card img {
+    width: 100%;
+    /* L'image prend toute la largeur du conteneur */
+}
+
+.text-content {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: #fff;
+    /* Positionne le texte en superposition sur l'image, avec un texte blanc */
+}
+
+.text-content p {
+    text-align: left;
+    max-width: 500px;
+    /* Aligne le texte à gauche et limite la largeur maximale à 500px */
+}
+
+.text-content h2 {
+    font-size: 90px;
+   
+}
+
+.mark-list img {
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    
+}
+
+.product-card {
+    flex: 1;
+    background: #fff;
+    text-align: center;
+    color: rgb(13, 39, 104);
+    padding: 55px;
+    margin: 50px;
+    box-shadow: 0 0 10px rgba(3, 13, 88, 0.555);
+    /* Style des cartes produits : flexibles, fond blanc, ombre portée, texte centré */
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    
+}
+
+footer {
+    background-color: #142d4f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+button {
+    background-color: #142d4f;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    margin-top: 19px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #406f9b;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 480px) {
+    .text-content h2 {
+        font-size: 60px;
+        /* Réduit la taille de police du titre pour les écrans de moins de 480px */
+    }
+    
+    .product-card {
+        margin: 20px;
+        padding: 15px;
+        /* Réduit les marges et le padding des cartes produits pour les petits écrans */
+    }
+
+    .product-card img {
+        width: 80px;
+        height: 80px;
+        /* Réduit la taille des images de produits pour les petits écrans */
+    }
+}
